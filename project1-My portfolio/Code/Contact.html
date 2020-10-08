@@ -1,90 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Contact</title>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" href="style.css">
 
-    <style>
+            <title>Contact</title>
+
+            <style>
+
+* {
+  box-sizing: border-box;
+}
+
+.contain {
+  max-width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 600px) {
+  .contain {
+    padding: 0;
+  }
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid #555;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  border: 1px solid #555;
+}
+
+.grid {
+  box-shadow: 0 0 5px 0 #555;}
+
+@media (min-width: 700px) {
+  
+    .grid {
+    opacity: 0.8;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .grid:hover {
+      opacity: 1;
+  }
+  
+  .grid > * {
+    padding: 2rem;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li 
+{
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    color: lightgrey;
+}
+.contacts {
+  background: #555;
+  color: #ddd;
+  border-radius: 2rem 0  0 2rem;
+}
 
 
+form {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  border-radius: 0 2rem 2rem 0;
+}
 
-        @media (max-width: 800px) {
-        .flex-form {
-      margin: 0.75rem;
-      padding: 0.75rem;
-      font-size: 15px; 
-      width: 80%;
-        }
+form p {
+  margin: 0;
+}
 
-        section {
-            margin-top: 6rem;
+.full-width {
+  grid-column: 1 / 3;
+}
 
-        }
-    
-        }
+button,
+input,
+textarea {
+  padding: 1rem;
+}
 
-    </style>
+button {
+  background: #ddd;
+  width: 100%;
+  border: 0;
+}
+button:hover, button:focus {
 
-    </head>
-    <body>
-        <div class="cover-contact">
+  background: #555;
+  color: lightgray;
+  outline: 0;
+}
+@media (max-width: 766px) {
 
-    <div class="navbar">
-        <a href="http://127.0.0.1:5500/index.html"><b>Home</b></a>
-        <a href="http://127.0.0.1:5500/personal-info.html"><b>Personal information</b></a>
-        <a href="http://127.0.0.1:5500/About.html"><b>About</b></a>
-        <a href="http://127.0.0.1:5500/Education.html"><b>Education</b></a>
-        <a href="http://127.0.0.1:5500/Experience.html"><b>Experience</b></a>
-        <a href="http://127.0.0.1:5500/Skills.html"><b>Skills</b></a>
-        <a href="https://github.com/HalaHyasat" target="_blank"><b>My Works</b></a>
-        <a href="http://127.0.0.1:5500/Contact.html"><b>Contact</b></a>
+section {
+    margin-top: 6rem;
 
+}}
 
-</div>
+            </style>
+        </head>
+        <body>
 
+            <div class="cover-contact">
+
+                <div class="navbar">
+                    <a href="http://127.0.0.1:5500/index.html"><b>Home</b></a>
+                    <a href="http://127.0.0.1:5500/personal-info.html"><b>Personal information</b></a>
+                    <a href="http://127.0.0.1:5500/About.html"><b>About</b></a>
+                    <a href="http://127.0.0.1:5500/Education.html"><b>Education</b></a>
+                    <a href="http://127.0.0.1:5500/Experience.html"><b>Experience</b></a>
+                    <a href="http://127.0.0.1:5500/Skills.html"><b>Skills</b></a>
+                    <a href="https://github.com/HalaHyasat" target="_blank"><b>My Works</b></a>
+                    <a href="http://127.0.0.1:5500/Contact.html"><b>Contact</b></a>
+            
+            </div>
         <section>
-            <h3 style="font-size: 25px;  padding: 2rem;"><u>Contact</u></h3>
-    
-    
-     
-                <br>
-                <div class="flex-container">
-                    <div class="flex-form">
-                <form> 
-          
-    
-                    Your name
-                    <input type="text" name="Hala" style="margin-left: 5rem;">
-                    <br><br>
-        
-        
-                    Email address
-                    <input type="email" Email="hala.alhyasat98@gmail.com" style="margin-left: 3rem;">
-                    <br><br>
-    
-                    <label for="Note"></label>
-                    <br>
-                    <textarea rows="4" cols="50" placeholder="Your notes"></textarea>
-    
-    
-                    <br> <br>
-    
-                    <input type="submit" value="Sent">
-                    <input type="reset" value="Clear" style="margin-left: 3rem;">
-    </div>
-    </div>
-        
+            <h3 style="font-size: 25px; padding: 2rem;"><u>Contact</u></h3>
+
+            <div class="contain">
+
+                <div class="grid">
+                  <div class="contacts">
+                    <h3>let's get in touch!</h3>
+              <br>
+                    <ul>
+                      <li>Hala Al- Hyasat</li>
+                      <li>+9627 7053 0135</li>
+                      <li>hala.alhyasat98@gmail.com</li>
+                    </ul>
+                  </div>
+              
+                    <form>
+                      <p>
+                        <label for="" style="color: #555;">Name</label>
+                        <input type="text">
+                      </p>
+                      <p>
+                        <label for="" style="color: #555;">Email Address</label>
+                        <input type="text">
+                      </p>
+
+                      <p class="full-width">
+                        <textarea name="" id="" cols="30" rows="7" placeholder="Your message" ></textarea>
+                      </p>
+                      <p class="full-width">
+                        <button>Send</button>
+                      </p>
+                    </form>
+                </div>
+              </div>
             </section>
-</div>
 
-<footer>
+              <footer>
 
-    Copyright&copy; Hala Al-Hyasat
-
-</footer>
-
+                Copyright&copy; Hala Al-Hyasat
+           
+            </footer>
+            </div>
+              
         </body>
         </html>
