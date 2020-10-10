@@ -8,6 +8,7 @@ html {
   align-content: inherit;
 }
 
+/* style for cover photo of home page(cover)*/
 .cover-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("portfolio.png");
   height: 100%;
@@ -18,13 +19,12 @@ html {
   padding: 2rem;
   box-sizing: border-box;
 }
+/* style for home cover photo */
 
+/* style for cover photo of personal information page (parallax) */
 .cover-personal {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("personal.png");
-
-
   min-height: 650px;
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,68 +32,72 @@ html {
   box-sizing: border-box;
 
 }
+/* style for cover photo of personal information page (parallax) */
 
+
+/* style for cover photo of about page (parallax) */
 .cover-About {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("About.jpeg");
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
-
 }
+/* style for cover photo of about page (parallax) */
 
+
+/* style for cover photo of skills page (parallax) */
 .cover-skills {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("skills.jpg");
-
-
   min-height: 900px;
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
-
 }
+/* style for cover photo of skills page (parallax) */
 
+
+/* style for cover photo of contact page (parallax) */
 .cover-contact {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("contact.png");
-
-
   min-height: 650px;
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
-
 }
+/* style for cover photo of contact page (parallax) */
 
+
+/* style for cover photo of experience page (parallax) */
 .cover-exp {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("exp.webp");
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
-
 }
+/* style for cover photo of experience page (parallax) */
 
+
+/* style for cover photo of education page (parallax) */
 .cover-education {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("education.jpg");
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
-
 }
+/* style for cover photo of education page (parallax) */
 
+
+/* style for the text in home page to be in the center of the photo*/
 .cover-text {
   text-align: center;
   position: absolute;
@@ -102,27 +106,10 @@ html {
   transform: translate(-50%, -50%);
   color: #ddd;
 }
+/* style for the text in home page to be in the center of the photo*/
 
 
-
-a:link {
-  text-decoration: none;
-  color: black;
-}
-
-a:visited {
-  color: black;
-}
-
-.cover-image>ul {
-  list-style-type: none;
-  height: 90vh;
-  width: 11vw;
-  padding: 2rem;
-}
-
-
-
+/* style of the navbar */
 .navbar {
   background-color: #6a6366;
   position: fixed;
@@ -152,6 +139,17 @@ a:visited {
 
 }
 
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+/* style of the navbar */
+
+
 section {
   margin-top: 1rem;
   height: 100vh;
@@ -160,6 +158,8 @@ section {
   box-sizing: border-box;
 }
 
+
+/* style of bootstrap in the skills page */
 .progress {
   border: 1px solid #ddd;
   background-color: black;
@@ -170,8 +170,10 @@ section {
 .progress:hover {
   opacity: 1;
 }
+/* style of bootstrap in the skills page */
 
 
+/* style of footer in all pages */
 footer {
   background-color: #6a6366;
   position: fixed;
@@ -181,7 +183,10 @@ footer {
   width: 100vw;
   margin: 0;
 }
+/* style of footer in all pages */
 
+
+/* style of contact page */
 .contain {
   max-width: 65rem;
   margin-left: auto;
@@ -276,3 +281,6 @@ button:focus {
   color: lightgray;
   outline: 0;
 }
+/* style of contact page */
+
+/* all media queries for best resposive in the style.css and all pages */
