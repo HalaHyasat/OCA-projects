@@ -8,7 +8,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1.1fr 0.7fr 0.1fr 1fr 0.65fr 1fr 0.8fr 0.7fr;
+    grid-template-rows: 0.1fr 1.3fr 0.7fr 0.1fr 1fr 0.65fr 1fr 0.8fr 0.7fr;
     gap: 10px 10px 0 10px;
 }
 
@@ -290,7 +290,7 @@
 
 .footer>ul>li>a {
     display: block;
-    padding: 2rem 5rem;
+    padding: 2rem 5.28rem;
     text-decoration: none;
     color: #999999;
 
@@ -306,7 +306,7 @@
     border-radius: 0.5rem 0.5rem 0 0;
     float: right;
     padding: 0.5rem 5rem 0.5rem 1rem;
-    margin: 26rem 2rem 0 0;
+    margin: 27rem 2rem 0 0;
     font-weight: bold;
 }
 
