@@ -16,14 +16,33 @@
   <div class="modal">
     <header class="header">
       <div class="logo">
-        <img class="logo" src="Pic/logo.png" alt="" />
+        <a href="../HomePage/index.html">
+
+          <img class="logo" src="Pic/logo.png" alt="" />
+        </a>
       </div>
       <div class="navigation">
         <ul>
-          <li>Home</li>
-          <li>Form</li>
-          <li>TDL</li>
-          <li>Calculator</li>
+          <a style="  text-decoration: none;
+          " href="../HomePage/index.html">
+
+            <li>Home</li>
+          </a>
+          <a style="  text-decoration: none;
+          " href="../Form/form.html">
+
+            <li>Form</li>
+          </a>
+          <a style="  text-decoration: none;
+          " href="../List/list.html">
+
+            <li>TDL</li>
+          </a>
+          <a style="  text-decoration: none;
+          " href="../Calculator/calculator.html">
+
+            <li>Calculator</li>
+          </a>
           <li>
             <label class="switch">
               <input type="checkbox" />
@@ -42,21 +61,19 @@
         <hr>
         <label for="name"><b>User name:</b></label>
         <input type="text" id="name" name="name" placeholder="Enter your name" title="Must contain minimum 5 letters"
-          onfocus="getMessage('name')" onblur="GoOut('name')" required>
+          onblur="GoOut('name')" required>
 
         <label for=" email"><b>Email</b></label>
         <input type="text" id="email" name="email" placeholder="Enter Email"
           title="Must contain at least one character (also number or whatever except another @ or whitespace before @, at least two characters or whatever except another @ or whitespace after @ and one dot in between."
-          onfocus="getMessage('email')" onblur="GoOut('email')" required>
+          onblur="GoOut('email')" required>
 
         <label for=" birth"><b>Date of birth:</b></label>
-        <input type="date" id="date" name="date" placeholder="Enter your birth" onfocus="getMessage('date')"
-          onblur="GoOut('date')" required>
+        <input type="date" id="date" name="date" placeholder="Enter your birth" onblur="GoOut('date')" required>
 
         <label for=" phone"><b>Phone number:</b></label>
         <input type="text" id="phone" name="phone" placeholder="Enter phone number"
-          title="Must contain only numbers, and 10 digits." onfocus="getMessage('phone')" onblur="GoOut('phone')"
-          required>
+          title="Must contain only numbers, and 10 digits." onblur="GoOut('phone')" required>
 
         <label for="psw"><b>Password</b></label>
         <input type="password" id="psw" name="psw" placeholder="Enter password" onfocus="getMessage('psw')"
@@ -75,6 +92,8 @@
 
           <button type="submit" onclick="LocalStorage()" class="signupbtn1" id="creat-account" disabled>Create
             account</button>
+
+
 
           <button type="submit" class="signupbtn2" id="save-information" onclick="SessionStorage()" disabled>Save
             Information</button>

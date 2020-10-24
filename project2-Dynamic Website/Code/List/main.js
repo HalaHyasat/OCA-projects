@@ -7,14 +7,14 @@ var inputTask = document.querySelector(".input");
 //button add (+)
 const add = document.querySelector(".add");
 
-//creat a impty array for todos tasks if its empty (if it is saved before bring it from local storage)
+//creat a empty array for todos tasks if its empty (if it is saved before bring it from local storage)
 if (window.localStorage.getItem("todos") == undefined) {
   var todos = [];
   //converted into a string
   window.localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-//converted into a object
+//converted into a object 
 var Local = window.localStorage.getItem("todos");
 var todos = JSON.parse(Local);
 
@@ -52,7 +52,7 @@ class item {
     //when click on edit button go to remove function
     remove.addEventListener("click", () => this.remove(itemBox, name));
 
-    //to create anew task which you append to the previous tasks
+    //to create a new task which append to the previous tasks
     container.appendChild(itemBox);
     itemBox.appendChild(input);
     itemBox.appendChild(edit);
@@ -145,7 +145,7 @@ function changeFont(fontName) {
   document.body.style.fontFamily = fontName;
 }
 
-//toogle the drop list of fonts
+//toggle the drop list of fonts
 function font() {
   var x = document.getElementById("dropdownContent");
   if (x.style.display === "none") {

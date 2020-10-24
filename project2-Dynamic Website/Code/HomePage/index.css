@@ -16,10 +16,13 @@ body {
   align-items: center;
 }
 
+
+
 .logo {
   width: 10vh;
   height: 10vh;
 }
+
 .navigation {
   margin-left: 1vw;
   font-size: 28px;
@@ -139,14 +142,17 @@ button {
     height: 5vh;
     width: 5vh;
   }
+
   .dropdown {
     display: none;
   }
+
   .header ul li {
     font-size: large;
     padding: 1rem;
     margin: 1rem 1rem 0 0;
   }
+
   p {
     font-size: small;
   }
@@ -154,6 +160,7 @@ button {
   footer h3 {
     font-size: large;
   }
+
   .container {
     margin-top: 5rem;
   }
