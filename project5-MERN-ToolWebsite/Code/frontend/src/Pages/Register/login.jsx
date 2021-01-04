@@ -77,6 +77,7 @@ export default class login extends Component {
       emailErrorS: "",
       phoneErrorS: "",
     });
+
     const emailError = validator.isEmail(this.state.emailS);
     const passwordError = validator.isStrongPassword(this.state.passwordS, {
       minLength: 6,

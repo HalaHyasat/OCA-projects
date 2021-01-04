@@ -11,6 +11,8 @@ import axios from "axios";
 import { NumContext } from "../../NumContext";
 import Empyt from "./Empyt";
 import Drawer from "react-drag-drawer";
+import { WaveTopBottomLoading } from "react-loadingg";
+
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import {
   Checkbox,
@@ -37,12 +39,14 @@ export default function Cart() {
   const [selectedOption, setselectedOption] = useState([]);
   const [numberOfMeals, setNumberOfMeals] = useState(1);
   const [confirmMsg, setconfirmMsg] = useState(false);
+  const [isLoading, setisLoading] = useState(true);
 
   const getItems = () => {
     axios
       .get("http://localhost:8000/cart/" + sessionStorage.getItem("userId"))
       .then((res) => {
         setcartItems(res.data);
+        setisLoading(false)
       });
   };
   useEffect(() => {
@@ -106,6 +110,16 @@ export default function Cart() {
         
       });
   };
+  if(isLoading){
+    return (
+      <>
+        <div className="marginLoading"></div>
+        {/* <CoffeeLoading size="small" color="#02594d" /> */}
+        <WaveTopBottomLoading size="large" color="#02594d" />
+      </>
+    );
+
+  }
   if (cartItems.length) {
     return (
       <section className="cart">
