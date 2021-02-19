@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+.cardcontainer{
+  display: flex;
+justify-content: space-between;
+flex-direction: column;
+float: left;
+box-shadow: #acadaf 2px 5px 7px 1px;
+width: 20rem;
+height: 26rem;
+border-radius: 5px;
+border: 1px solid #293241;
+margin: 1rem;
+}
+
+.cardimg{
+    /* border: 1px solid gold; */
+   width: 19.9rem;
+   height: 11rem;
+   border-radius: 5px;
+   
+}
+.textcontainer{
+padding: 1rem;
+/* border: 1px solid red; */
+}
+.maintext{
+    text-align: center;
+    color: #293241;
+}
+.subtext{
+text-align: left;
+color: #3D5A80;
+}
+
+.button {
+  /* overflow: hidden; */
+  margin-left: 6.3rem;
+  margin-bottom: 0.5rem;
+  color: #E0FBFC; 
+    width: 7rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    background: linear-gradient(135deg, #3D5A80, #293241);
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+
+  }
+  .button:hover {
+    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0), 0 3px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+ .buttontext{
+    padding-top: 0.6rem;
+ }
+ .color{
+  background: linear-gradient(135deg, #3D5A80, #293241);
+  height: 2.5rem;
+  margin-top: 1rem;
+  border-radius: 6px 6px 0px 0px;
+}
+/* tablet */
+ @media only screen and (max-width: 912px) {
+.cardcontainer{
+  margin-left: 8rem;
+}
+
+} 
+/* 
+ @media only screen and (max-width: 302px) {
+    
+  .cardcontainer{
+  width: 13.3rem;
+   margin-left: 0rem; 
+  margin: 0;
+  padding: 0;
+  } 
+  
+  .cardimg{
+  
+   width: 13rem;
+  }
+  .button{
+    width: 4rem;
+    height: 2rem;
+    font-size: xx-small;
+    padding-bottom: .3rem;
+  }
+  .textcontainer{
+    padding: 0;
+    margin: 0;
+    width: 14rem;
+    overflow: hidden;
+    height: 13rem;
+    }
+    
+  }
+     */
+
+/* for very very small devices  */
+@media only screen and (max-width: 300px) {
+    
+.cardcontainer{
+width: 12rem;
+margin-left: 0rem;
+} 
+
+.cardimg{
+
+ width: 12.3rem;
+}
+.button{
+  width: 4rem;
+  height: 2rem;
+  font-size: xx-small;
+  padding-bottom: .3rem;
+}
+.textcontainer{
+  padding: 0;
+  margin: 0;
+  width: 10rem;
+  height: 13rem;
+  }
+  }
+
+  @media (min-width: 302px) and (max-width: 447px) {
+  
+    .cardcontainer{
+      width: 13.3rem;
+       margin-left: 5rem; 
+      padding: 0;
+      } 
+      
+      .cardimg{
+      
+       width: 13rem;
+      }
+      .button{
+        width: 4rem;
+        height: 2rem;
+        font-size: xx-small;
+        padding-bottom: .3rem;
+      }
+      .textcontainer{
+        padding: 0;
+        margin: 0;
+        width: 14rem;
+        overflow: hidden;
+        height: 13rem;
+        }
+        }

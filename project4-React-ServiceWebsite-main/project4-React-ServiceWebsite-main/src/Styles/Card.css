@@ -1,0 +1,63 @@
+
+ .flex-container{
+   display: flex;
+   justify-content: center;
+ }
+.top-container{
+  margin: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  flex-basis: 20rem;
+  height: 22rem;
+  font-size: .75rem;
+  box-shadow: rgb(122, 118, 118) 0 .10rem .10rem ;
+ 
+
+  }
+  .top-img {
+    width: 100%;
+    border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  }
+ 
+  .card{
+    position: relative;
+    margin-top: 10%;
+    text-align: center;
+    color:#3D5A80 ;
+
+  }
+ 
+  .profile-img {
+    width: 35%;
+    height: 65%;
+    top: -105px;
+    left:35%;
+    border-radius: 50%;
+  }
+  
+  .icons{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 858px){
+    .flex-container{
+    position: relative;
+    z-index: -1;
+   
+
+  }
+  }
+
+  /* @media (max-width: 500px){
+    .flex-container{
+
+   
+    grid-template-columns: auto ;
+    margin-left:3rem;
+  }
+  
+} */

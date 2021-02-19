@@ -1,0 +1,25 @@
+
+body{
+    background-color: #FFF;
+}
+.flex-container{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    /* display: grid;
+    border: 2px solid black;
+    grid-template-columns: repeat(auto) !important;
+    grid-template-rows: 1fr ;
+    width: 200rem;
+    height: 50rem;   */
+    /* display: flex; 
+    flex-direction: row; */
+/* justify-content: space-around; */
+   
+   
+
+  }
+  
